@@ -35,9 +35,11 @@ const Task = ({ content, id, RefreshList, handleChecked }) => {
       <i
         className="bi bi-x-lg delete"
         onClick={() => {
-          fetch("http://localhost:8000/tasks/" + id, { method: "DELETE" }).then(
-            () => RefreshList()
-          );
+          fetch(
+            "https://my-json-server.typicode.com/hatem0656/Todo-App-Server/tasks/" +
+              id,
+            { method: "DELETE" }
+          ).then(() => RefreshList());
         }}
       ></i>
     </div>
