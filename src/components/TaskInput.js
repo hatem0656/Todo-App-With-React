@@ -10,7 +10,10 @@ const TaskInput = ({ RefreshList }) => {
       "https://my-json-server.typicode.com/hatem0656/Todo-App-Server/tasks",
       {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(task),
       }
     ).then(() => {
