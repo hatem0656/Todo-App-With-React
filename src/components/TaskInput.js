@@ -6,17 +6,14 @@ const TaskInput = ({ RefreshList }) => {
     e.preventDefault();
     const task = { content };
 
-    fetch(
-      "https://my-json-server.typicode.com/hatem0656/Todo-App-Server/tasks",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(task),
-      }
-    ).then(() => {
+    fetch("https://todo-app-react7.herokuapp.com/api/tasks", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(task),
+    }).then(() => {
       RefreshList();
       setContent("");
     });

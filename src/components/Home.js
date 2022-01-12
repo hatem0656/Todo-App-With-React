@@ -11,10 +11,7 @@ const Home = () => {
     loading,
     data: tasks,
     error,
-  } = useFetch(
-    "https://my-json-server.typicode.com/hatem0656/Todo-App-Server/tasks",
-    listRefresh
-  );
+  } = useFetch("https://todo-app-react7.herokuapp.com/api/tasks", listRefresh);
 
   const RefreshList = () => setListRefresh(!listRefresh);
   return (
