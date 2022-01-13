@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "homepage": "http://hatem0656.github.io/Todo-App-With-React",
   "private": true,
-  "engines": {
-    "node": "16.13.1"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
@@ -17,7 +14,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",

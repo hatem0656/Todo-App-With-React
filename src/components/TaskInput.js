@@ -6,7 +6,7 @@ const TaskInput = ({ RefreshList }) => {
     e.preventDefault();
     const task = { content };
 
-    fetch("https://todo-app-react7.herokuapp.com/api/tasks", {
+    fetch("https://todo-app-server7.herokuapp.com/tasks", {
       method: "POST",
       headers: {
         Accept: "application/json",

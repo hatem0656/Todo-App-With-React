@@ -43,7 +43,7 @@ const TaskFilter = ({ RefreshList, taskNo }) => {
     for (let i = 0; i < completedTasks.current.length; i++) {
       // Must wait the returned promise of the fetch function to continue the loop to avoid requests colliosion
       await fetch(
-        "https://todo-app-react7.herokuapp.com/api/tasks/" +
+        "https://todo-app-server7.herokuapp.com/tasks/" +
           completedTasks.current[i].id,
         {
           method: "DELETE",
