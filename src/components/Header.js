@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="mb-2 py-3 custom-container col-md-6 col-sm-8 col-11 d-flex justify-content-between">
-      <h2 className=" text-white fw-bold col-xl-10 col-11 px-3 ">TODO</h2>
+      <h2 className=" text-white fw-bold col-xl-10 col-11 px-3 pt-1 ">TODO</h2>
       <div className="theme-icon col ms-xl-3 ">
         {lightMode && (
           <i

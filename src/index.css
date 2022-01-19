@@ -185,10 +185,12 @@ div.list {
   background-color: var(--main-color);
   border-radius: 0 0 4px 4px;
 }
-div.filters * {
+div.filters *,
+.hint {
   color: var(--seconadry-Fcolor);
   font-size: 0.7rem;
 }
+
 .filters button {
   padding: 0.5rem 0.5rem;
 }
@@ -202,9 +204,4 @@ div.filters * {
 }
 .filters button:focus {
   box-shadow: none;
-}
-
-.hint {
-  color: var(--seconadry-Fcolor);
-  font-size: 0.7rem;
 }

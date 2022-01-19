@@ -56,7 +56,7 @@ const TaskFilter = ({ RefreshList, taskNo }) => {
   return (
     <div
       nodrag="true"
-      className="filters d-flex align-items-center text-center pt-1 px-4 w-100 ms-sm-3 ms-2"
+      className="filters d-flex align-items-center text-center pt-1 px-sm-4 px-3 w-100 ms-sm-3 ms-2"
     >
       <span>{taskNo} items left</span>
       <button
