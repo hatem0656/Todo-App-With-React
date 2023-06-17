@@ -6,7 +6,7 @@ const TaskInput = ({ RefreshList }) => {
     e.preventDefault();
     const task = { content };
 
-    fetch("https://todo-app-server7.herokuapp.com/tasks", {
+    fetch("https://todo-app-an4y.onrender.com/api/todos", {
       method: "POST",
       headers: {
         Accept: "application/json",

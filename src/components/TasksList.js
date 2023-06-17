@@ -64,8 +64,8 @@ const TasksList = ({ tasks, RefreshList }) => {
         return (
           <Task
             content={task.content}
-            key={task.id}
-            id={task.id}
+            key={task._id}
+            id={task._id}
             RefreshList={RefreshList}
             handleChecked={handleUpdateTasks}
           />

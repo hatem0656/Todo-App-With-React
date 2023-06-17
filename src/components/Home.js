@@ -11,7 +11,7 @@ const Home = () => {
     loading,
     data: tasks,
     error,
-  } = useFetch("https://todo-app-server7.herokuapp.com/tasks", listRefresh);
+  } = useFetch("https://todo-app-an4y.onrender.com/api/todos", listRefresh);
 
   const RefreshList = () => setListRefresh(!listRefresh);
   return (

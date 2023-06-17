@@ -35,7 +35,7 @@ const Task = ({ content, id, RefreshList, handleChecked }) => {
       <i
         className="bi bi-x-lg delete"
         onClick={() => {
-          fetch("https://todo-app-server7.herokuapp.com/tasks/" + id, {
+          fetch("https://todo-app-an4y.onrender.com/api/todos/" + id, {
             method: "DELETE",
           }).then(() => RefreshList());
         }}
